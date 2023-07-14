@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Getting Started with GitHub: A Beginner's Guide</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+    }
+
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+
+    h2 {
+        color: #666;
+        margin-top: 30px;
+    }
+
+    p {
+        color: #444;
+    }
+
+    ol {
+        margin-left: 20px;
+    }
+
+    pre {
+        background-color: #f5f5f5;
+        padding: 10px;
+    }
+
+    code {
+        font-family: Consolas, monospace;
+    }
+</style>
+<script>
+    function copyToClipboard(command) {
+      const textarea = document.createElement('textarea');
+      textarea.value = command;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      alert('Command copied to clipboard!');
+    }
+  </script>
+</head>
+
+<body>
+    <h1>Getting Started with GitHub: A Beginner's Guide</h1>
+
+    <h2>What is GitHub?</h2>
+    <p>GitHub is a web-based platform designed for version control and collaboration on code projects. It provides a
+        central repository where developers can store, manage, and track changes to their code over time. GitHub also
+        offers
+        a range of features, such as issue tracking, pull requests, and project management tools, making it a powerful
+        platform for teams working together.</p>
+
+    <h2>Creating a GitHub Account</h2>
+    <p>To get started with GitHub, you'll need to create an account. Follow these steps:</p>
+    <ol>
+        <li>Go to the <a href="https://github.com/">GitHub homepage</a> and click on the "Sign up" button.</li>
+        <li>Enter your preferred username, email address, and password.</li>
+        <li>Choose your plan. GitHub offers free accounts for public repositories and paid plans for private
+            repositories,
+            depending on your needs.</li>
+        <li>Complete the registration process by verifying your email address.</li>
+    </ol>
+
+    <h2>Creating a Repository</h2>
+    <p>Once you have a GitHub account, you can create a repository to store your projects. Here's how:</p>
+    <ol>
+        <li>Log in to your GitHub account.</li>
+        <li>Click on the green "New" button on the left-hand side of the screen.</li>
+        <li>Enter a name for your repository and provide an optional description.</li>
+        <li>Choose whether you want your repository to be public or private.</li>
+        <li>Initialize the repository with a README file. This is useful for providing an overview of your project.</li>
+        <li>Click on the "Create repository" button.</li>
+    </ol>
+
+    <h2>Cloning a Repository</h2>
+    <p>To work with a repository locally on your computer, you need to clone it. Cloning creates a local copy of the
+        repository on your machine. Follow these steps:</p>
+    <ol>
+        <li>Open the repository you want to clone on GitHub.</li>
+        <li>Click on the green "Code" button.</li>
+        <li>Copy the repository's URL.</li>
+        <li <li>Open your terminal or command prompt.</li>
+        <li>Navigate to the directory where you want to clone the repository.</li>
+        <li>Run the following command, replacing `<repository-url>` with the URL you copied:</li>
+            
+        </ol>
+        
+        <pre><code>git clone &lt;repository-url&gt;</code></pre>
+        <button style="margin-left: 10px; padding: 5px 20px; border-radius: 5px;" class="copy-button" onclick="copyToClipboard('git clone &lt;repository-url&gt;')">Copy Command</button>
+
+    <h2>Making Changes and Committing</h2>
+    <p>Once you have a local copy of the repository, you can make changes to the code. Here's the basic workflow:</p>
+    <ol>
+        <li>Open the project folder in your preferred code editor.</li>
+        <li>Make the necessary modifications to the files.</li>
+        <li>Save your changes.</li>
+        <li>Open your terminal or command prompt.</li>
+        <li>Navigate to the repository's directory.</li>
+        <li>Run the following command to stage your changes:</li>
+    </ol>
+
+    <pre><code>git add .</code></pre>
+
+    <p>The <code>.</code> adds all modified files to the staging area. Alternatively, you can specify individual files.
+    </p>
+
+    <ol start="7">
+        <li>Commit your changes with a descriptive message:</li>
+    </ol>
+
+    <pre><code>git commit -m "Your commit message here"</code></pre>
+
+    <h2>Pushing Changes to GitHub</h2>
+    <p>After committing your changes, you need to push them to your GitHub repository. Follow these steps:</p>
+    <ol>
+        <li>Open your terminal or command prompt.</li>
+        <li>Navigate to the repository's directory.</li>
+        <li>Run the following command:</li>
+    </ol>
+
+    <pre><code>git push</code></pre>
+
+    <p>This command pushes the committed changes to the remote repository on GitHub.</p>
+
+    <h2>Collaborating with Others</h2>
+    <p>GitHub is designed for collaboration. You can work with others on the same project by leveraging pull requests
+        and branches. Here's a high-level overview:</p>
+    <ol>
+        <li>Create a branch: Branches allow you to work on separate features or bug fixes without modifying the main
+            codebase directly. Use the command <code>git branch &lt;branch-name&gt;</code> to create a new branch.</li>
+        <li>Make changes and commit: Follow the steps outlined earlier to make changes to the code and commit them to
+            your branch.</li>
+        <li>Push the branch: Use <code>git push origin &lt;branch-name&gt;</code> to push your branch to GitHub.</li>
+        <li>Open a pull request: On the GitHub repository page, click on the "Pull request" button to create a new pull
+            request. Select the appropriate branches and provide a descriptive title and description for the changes.
+        </li>
+        <li>Review and merge: Collaborators can review the changes, leave comments, and suggest modifications. Once the
+            changes are approved, the branch can be merged into the main codebase.</li>
+    </ol>
+
+    <h2>Conclusion</h2>
+    <p>GitHub is a powerful platform that simplifies code collaboration and version control. By following the steps
+        outlined in this guide, you're well on your way to using GitHub effectively. Remember to explore additional
+        features and integrations as you continue your journey as a developer.</p>
+        <footer>
+            <h2>Created by Pramod Kesarkar</h2>
+            <p>Contact: Pramodkesarkar2222@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/PRAMOD222" style="text-decoration: none;">PRAMOD222</a></p>
+          </footer>
+
+</body>
+
+</html>
